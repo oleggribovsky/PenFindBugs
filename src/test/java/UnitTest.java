@@ -74,7 +74,7 @@ private String testWord = "hrybouski";
     }
 
 
-
+    //test constructor with 3 parameters
     @DataProvider(name = "data-provider-size-letter-color")
     public Object[][] dataProviderMethodSizeLetterColor() {
         return new Object[][]{
@@ -88,6 +88,8 @@ private String testWord = "hrybouski";
         //BUG 5 Output is BLUE instead of GREEN
     }
 
+
+    // test of doSomethingElse method (prints to console)
     @Test
     public void readFromConsole() throws FileNotFoundException {
         try {
@@ -115,6 +117,7 @@ private String testWord = "hrybouski";
 
     }
 
+    //test of isWork method
     @Test
     public void verifyIsWork(){
         Assert.assertTrue(!new Pen(-5).isWork());
